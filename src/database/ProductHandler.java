@@ -67,6 +67,20 @@ public class ProductHandler extends MySQLConnection {
             closeDBObjects(null, pStatement, connection);
         }
     }
+//    public void productUpdate(String id, String name, String descript, String price) {
+//        java.sql.Connection connection = null;
+//        PreparedStatement pStatement = null;
+//        try {
+//            connection = getConnection();
+//            String sql = "UPDATE products SET" + " `name` = '" + name+"'"+ ",`description` = '" +  descript+"'"+ ",`price` = " + price+ " WHERE `id` = "+ id;
+//            pStatement = connection.prepareStatement(sql);
+//            pStatement.execute();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        } finally {
+//            closeDBObjects(null, pStatement, connection);
+//        }
+//    }
 
     public Product getProductById(int id){
         Product product = new Product();
