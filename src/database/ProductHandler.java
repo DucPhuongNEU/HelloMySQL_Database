@@ -82,6 +82,7 @@ public class ProductHandler extends MySQLConnection {
 //        }
 //    }
 
+
     public Product getProductById(int id){
         Product product = new Product();
         java.sql.Connection connection = null;
